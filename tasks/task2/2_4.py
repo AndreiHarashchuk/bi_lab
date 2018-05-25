@@ -15,17 +15,17 @@ def checkio(text):
 
     table = {}
 
-    for caracter in text:
+    for character in text:
 
-        if 'a' <= caracter <= 'z':
-            table[caracter] = table.get(caracter, 0) + 1
+        if 'a' <= character <= 'z':
+            table[character] = table.get(character, 0) + 1
 
     max_freq = max(table.values())
 
-    for caracter in sorted(table.keys()):
+    for character in sorted(table.keys()):
 
-        if table[caracter] == max_freq:
-            return caracter
+        if table[character] == max_freq:
+            return character
 
 
 # These "asserts" using only for self-checking

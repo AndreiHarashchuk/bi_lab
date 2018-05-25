@@ -8,9 +8,9 @@ input_str = input('Введите строку: ')
 
 input_str = input_str.casefold()
 
-rev_str = reversed(input_str)[:input_str: -1]
+rev_str = reversed(input_str)
 
-if list(input_str) == list(rev_str):
+if input_str == rev_str:
 
     print("It is palindrome")
 
