@@ -41,4 +41,3 @@ def happy(n, past=set()):
 
 def happy_numbers(n=101):
     return [x for x in range(1, n) if happy(x, set())]
-
