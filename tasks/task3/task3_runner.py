@@ -20,4 +20,3 @@ def runner(*args):
 
 
 runner('poly', 'happy_numbers')
-
