@@ -5,10 +5,15 @@ For example
 Input data:  one item price is 3 dollars 20 cents, calculate price for 3 items
 Output data: Total cost:  9 dollars 20 cents.
 """
-q1 = float(input('Введите цену товара: '))
+
+q1 = int(input('Введите цену в долларах: '))
+
+q = int(input('Введите количество центов: '))
 
 q2 = int(input('Введите количества товаров: '))
 
-check = q1 * q2
+q1 = q1 * q2 + q * q2 // 100
 
-print('Итого ', ' = ', check, '$')
+q = q * q2 % 100
+
+print("Итого: %d долларов и %d центов" % (q1, q))
