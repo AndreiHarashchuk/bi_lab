@@ -9,6 +9,6 @@ def fizzbuzz(number):
     return number
 
 
-def main():
+if __name__ == "__main__":
     for i in range(1, 101):
         print(fizzbuzz(i))

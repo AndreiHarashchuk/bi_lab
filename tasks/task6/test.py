@@ -1,4 +1,4 @@
-import fizzbuzz
+from fizzbuzz import fizzbuzz
 import unittest
 
 
@@ -15,7 +15,7 @@ class FizzBuzzTest(unittest.TestCase):
 
     def test_buzz(self):
         self.assertEqual(fizzbuzz(5), 'buzz')
-        self.assertEqual(fizzbuzz(10), 'buzz')
+        self.assertEqual(fizzbuzz(10), 'buzz')1
         self.assertEqual(fizzbuzz(20), 'buzz')
 
     def test_fizzbuzz(self):
