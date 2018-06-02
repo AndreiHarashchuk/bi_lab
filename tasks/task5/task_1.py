@@ -21,12 +21,12 @@ if not os.path.isfile(full_file_name):
     ftp = FTP(website_address)
     ftp.login()
     ftp.cwd(folder_path)
-    ftp.retrbinary("RETR {full_file_name}".format(full_file_name=full_file_name), open(full_file_name, 'wb').write)
+    ftp.retrbinary("RETR {full_file_name}".
+                   format(full_file_name=full_file_name),
+                   open(full_file_name, 'wb').write)
     input_file = gzip.GzipFile(full_file_name, 'rb')
     s = input_file.read()
     input_file.close()
     output_file = open("{file_name}.txt".format(file_name=file_name), 'wb')
     output_file.write(s)
     output_file.close()
-
-
